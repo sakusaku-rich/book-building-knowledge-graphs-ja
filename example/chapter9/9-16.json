@@ -1,0 +1,45 @@
+{
+  "master_entity_id": 1,
+  "references": [
+    {
+      "details": {
+        "m_fullname": "sydney joanne bernardy",
+        "system_id": "2_1",
+        "m_yob": 1979,
+        "name": "Bernardy, Sydney Joanne",
+        "passport_no": "A465901",
+        "source": "ds2",
+        "age": "44"
+      },
+      "source": "ds2"
+    },
+    {
+      "details": {
+        "m_fullname": "sidney bernardy",
+        "full_name": "Sidney Bernardy",
+        "system_id": "1_1",
+        "m_yob": 1979,
+        "passport_no": "A465901",
+        "source": "ds1",
+        "yob": "1979",
+        "email": "sbernardy0@va.gov",
+        "ssn": "252-13-7091"
+      },
+      "source": "ds1"
+    },
+    {
+      "details": {
+        "m_fullname": "syd j bernardy",
+        "dob": "1979-05-13",
+        "system_id": "3_1",
+        "m_yob": 1979,
+        "last_name": "Bernardy",
+        "source": "ds3",
+        "first_name": "Syd J",
+        "email": "sjb@gmail.com",
+        "ssn": "252-13-7091"
+      },
+      "source": "ds3"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Neo4jSourceConnectorAVRO",
+  "config": {
+    "topic": "new-arrivals-in-Berlin",
+    // ...
+    "neo4j.streaming.poll.interval.msecs": 5000,
+    "neo4j.streaming.property": "timestamp",
+    "neo4j.streaming.from": "NOW",
+    "neo4j.enforce.schema": true,
+    "neo4j.source.query": "MATCH (p:Person)-[li:LIVES_IN]->(:Place {city: 'Berlin', country: 'DE'})　WHERE li.timestamp > $lastCheck RETURN p.name AS name, li.timestamp AS since"
+  }
+}

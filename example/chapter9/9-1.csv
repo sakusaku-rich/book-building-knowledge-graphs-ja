@@ -1,0 +1,5 @@
+rowid, Source, AccountNo, Name, Passport, DriversLic, DOB
+1, "Credit", 9918475, "Pete Downe", "VX83041",, 1987-03-12
+2, "Current", 2436930, "Peter J. Downe", "VX83041",, 1987-03-12
+3, "Credit", , "Jane Coleman", ,"49587640", 1989-10-28
+4, "Current", 2436930, "Jane Downe", "RA14958", , 1989-10-28

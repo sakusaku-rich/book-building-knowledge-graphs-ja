@@ -1,0 +1,22 @@
+mutation {
+  createPlaces(
+    input: {
+      city: "Sydney"
+      country: "Australia"
+      people: {
+        create: [
+          { node: { name: "Skippy" } }
+          { node: { name: "Cate Blanchet" } }
+        ]
+      }
+    }
+  ) {
+    places {
+      city
+      country
+      people {
+        name
+      }
+    }
+  }
+}

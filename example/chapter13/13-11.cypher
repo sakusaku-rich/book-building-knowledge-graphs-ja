@@ -1,0 +1,5 @@
+MERGE (x:Entity {name: 'Euroyacht Limited', jurisdiction: 'BM'})
+MERGE (y:Entity {name: 'TUC LIMITED', jurisdiction: 'MLT', incorporation_date: date('2013-10-07')})
+MERGE (z:Entity {name: 'GLOBAL TUITION & EDUCATION INSURANCE CORPORATION', jurisdiction: 'BRB', incorporation_date: date('1998-04-03')})
+MERGE (x)-[:OFFICER_OF]->(y)
+MERGE (x)-[:OFFICER_OF]->(z)

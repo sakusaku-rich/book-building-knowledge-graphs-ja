@@ -1,0 +1,1 @@
+CALL n10s.onto.import.fetch('オントロジーを含んだファイル', 'Turtle')

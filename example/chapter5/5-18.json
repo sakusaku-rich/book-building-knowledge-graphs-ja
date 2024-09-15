@@ -1,0 +1,8 @@
+{
+  "name": "Neo4jSinkConnector",
+  "config": {
+    "topics": "new-arrivals-in-Berlin",
+    // ...
+    "neo4j.topic.cypher.new-arrivals-in-Berlin": "MERGE (person:Person {name: event.name}) MERGE (place:Place {city: event.city, country: event.country}) MERGE (person)-[LIVES_IN {since: '2021-06-12T10:31:11.553+0100'}]->(place)"
+  }
+}
