@@ -1,0 +1,9 @@
+type Place {
+  city: String!
+  country: String
+  people: [Person!]! @relationship(type: "LIVES_IN", direction: IN)
+}
+type Person {
+  name: String!
+  home: Place! @relationship(type: "LIVES_IN", direction: OUT)
+}

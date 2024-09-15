@@ -1,0 +1,1 @@
+CREATE (:Class {name: 'title', label: 'Movie'});

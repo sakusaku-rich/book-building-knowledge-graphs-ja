@@ -1,0 +1,5 @@
+MATCH (prop:LexicalConcept {uri: 'https://custom.extension/id/15349-n'})
+MATCH (oss:LexicalConcept {uri: 'https://custom.extension/id/15350-n'})
+MATCH (sw:LexicalConcept {uri: 'https://en-word.net/id/oewn-06578068-n'})
+MERGE (prop)-[:hypernym]->(sw)-[:hyponym]->(prop)
+MERGE (oss)-[:hypernym]->(sw)-[:hyponym]->(oss)

@@ -1,0 +1,1 @@
+CALL gds.graph.project('identity-sim', ['Product', 'Word'], ['includes'])

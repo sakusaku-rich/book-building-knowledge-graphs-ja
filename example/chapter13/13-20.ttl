@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix talk: <http://www.neo4j.org/2022/07/talkable#> .
+@prefix mv: <http://www.neo4j.org/sch/movies#> .
+
+mv:born rdf:type owl:DatatypeProperty ;
+	rdfs:domain mv:Person ;
+	talk:direct
+    "The birth year of $s was"@long ,
+    "spawned in"@short ,
+    "was born in"@default ;
+	rdfs:label "born" .
+
+mv:released rdf:type owl:DatatypeProperty ;
+	rdfs:domain mv:Movie ;
+	talk:direct
+		"premiered in"@short ,
+		"The release year of $s was"@long ,
+		"was released in"@default ;
+	rdfs:label "released" .
+
+mv:tagline rdf:type owl:DatatypeProperty ;
+	rdfs:domain mv:Movie ;
+	talk:direct
+		"'s tagline goes: '$o'"@default ,
+		"'s tagline is"@short ,
+		"the tagline for $s was"@long ;
+	rdfs:label "tagline" .

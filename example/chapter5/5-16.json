@@ -1,0 +1,20 @@
+{
+  "data": {
+    "createPlaces": {
+      "places": [
+        {
+          "city": "Sydney",
+          "country": "Australia",
+          "people": [
+            {
+              "name": "Skippy"
+            },
+            {
+              "name": "Cate Blanchet"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wdp: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+wd:Q1628290
+rdfs:label "Neo4j"@de ;
+schema:description "graph database implemented in Java"@en ;
+wdp:P31 wd:Q595971 .
+
+<https://en.wikipedia.org/wiki/Neo4j> schema:about wd:Q1628290 .
