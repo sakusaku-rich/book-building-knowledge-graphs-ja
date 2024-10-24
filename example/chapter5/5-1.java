@@ -24,7 +24,7 @@ public class JavaDriverExample implements AutoCloseable {
       // 3. クエリがグラフを更新するか否かをドライバに示し、
       //    クラスタ内で適切なルーティングが行えるようにする
       // Session#writeTransaction も利用可能
-      return session.readTransaction(tx - > {
+      return session.readTransaction(tx -> {
         Result result = tx.run("MATCH (a:Person)-[:FRIEND]->(b:Person) "
                 + "WHERE a.name = $name " + // 4. パラメータ化
                 "RETURN b.name",
