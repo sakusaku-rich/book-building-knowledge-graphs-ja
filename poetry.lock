@@ -22,6 +22,14 @@ astroid = ["astroid (>=1,<2)", "astroid (>=2,<4)"]
 test = ["astroid (>=1,<2)", "astroid (>=2,<4)", "pytest"]
 
 [[package]]
+name = "async-timeout"
+version = "5.0.1"
+description = "Timeout context manager for asyncio programs"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
 name = "attrs"
 version = "24.2.0"
 description = "Classes Without Boilerplate"
@@ -68,6 +76,17 @@ python-versions = ">=3.8"
 
 [package.dependencies]
 pycparser = "*"
+
+[[package]]
+name = "choreographer"
+version = "0.99.6"
+description = "Devtools Protocol implementation for chrome."
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.extras]
+dev = ["async-timeout", "pytest", "pytest-asyncio", "pytest-xdist"]
 
 [[package]]
 name = "click"
@@ -302,6 +321,21 @@ traitlets = ">=5.3"
 [package.extras]
 docs = ["myst-parser", "pydata-sphinx-theme", "sphinx-autodoc-typehints", "sphinxcontrib-github-alt", "sphinxcontrib-spelling", "traitlets"]
 test = ["ipykernel", "pre-commit", "pytest (<8)", "pytest-cov", "pytest-timeout"]
+
+[[package]]
+name = "kaleido"
+version = "0.4.1"
+description = "Plotly graph export library"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.dependencies]
+async-timeout = "*"
+choreographer = ">=0.99.6"
+
+[package.extras]
+dev = ["pytest"]
 
 [[package]]
 name = "matplotlib-inline"
@@ -721,7 +755,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.12"
-content-hash = "e5749f26676f3b6ab5aec13449a2a4b935f3ad7cb41fcba0dc586f208fb5aefc"
+content-hash = "f8e6cc37f3f6fc9b79ce5292336091d34b30a4430cfcf394c2397628b622d2d1"
 
 [metadata.files]
 appnope = [
@@ -731,6 +765,10 @@ appnope = [
 asttokens = [
     {file = "asttokens-2.4.1-py2.py3-none-any.whl", hash = "sha256:051ed49c3dcae8913ea7cd08e46a606dba30b79993209636c4875bc1d637bc24"},
     {file = "asttokens-2.4.1.tar.gz", hash = "sha256:b03869718ba9a6eb027e134bfdf69f38a236d681c83c160d510768af11254ba0"},
+]
+async-timeout = [
+    {file = "async_timeout-5.0.1-py3-none-any.whl", hash = "sha256:39e3809566ff85354557ec2398b55e096c8364bacac9405a7a1fa429e77fe76c"},
+    {file = "async_timeout-5.0.1.tar.gz", hash = "sha256:d9321a7a3d5a6a5e187e824d2fa0793ce379a202935782d555d6e9d2735677d3"},
 ]
 attrs = [
     {file = "attrs-24.2.0-py3-none-any.whl", hash = "sha256:81921eb96de3191c8258c199618104dd27ac608d9366f5e35d011eae1867ede2"},
@@ -829,6 +867,10 @@ cffi = [
     {file = "cffi-1.17.1-cp39-cp39-win_amd64.whl", hash = "sha256:d016c76bdd850f3c626af19b0542c9677ba156e4ee4fccfdd7848803533ef662"},
     {file = "cffi-1.17.1.tar.gz", hash = "sha256:1c39c6016c32bc48dd54561950ebd6836e1670f2ae46128f67cf49e789c52824"},
 ]
+choreographer = [
+    {file = "choreographer-0.99.6-py3-none-any.whl", hash = "sha256:8256485cae76669901bd3ab1ad6de886b9767d26ad4d13d3c030a50fb31a62d0"},
+    {file = "choreographer-0.99.6.tar.gz", hash = "sha256:280d82c961cdb7f8539ae6fb50397a7f72507eb966210c98edac69a564acb34f"},
+]
 click = [
     {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
     {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
@@ -916,6 +958,10 @@ jupyter-client = [
 jupyter-core = [
     {file = "jupyter_core-5.7.2-py3-none-any.whl", hash = "sha256:4f7315d2f6b4bcf2e3e7cb6e46772eba760ae459cd1f59d29eb57b0a01bd7409"},
     {file = "jupyter_core-5.7.2.tar.gz", hash = "sha256:aa5f8d32bbf6b431ac830496da7392035d6f61b4f54872f15c4bd2a9c3f536d9"},
+]
+kaleido = [
+    {file = "kaleido-0.4.1-py3-none-any.whl", hash = "sha256:be3470a98793ce7ec16fd99067c250d158ab7294fefba7e7c6bd0c5d6107edcf"},
+    {file = "kaleido-0.4.1.tar.gz", hash = "sha256:d13194cda4b2bcd9bd47deb2c4e79679d85f9791c1edb91686ccce1a01d84a24"},
 ]
 matplotlib-inline = [
     {file = "matplotlib_inline-0.1.7-py3-none-any.whl", hash = "sha256:df192d39a4ff8f21b1895d72e6a13f5fcc5099f00fa84384e0ea28c2cc0653ca"},

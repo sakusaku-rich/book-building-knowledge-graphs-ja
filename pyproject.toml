@@ -17,6 +17,7 @@ tqdm = "^4.67.0"
 scikit-learn = "^1.5.2"
 plotly = "^5.24.1"
 nbformat = "^5.10.4"
+kaleido = "^0.4.1"
 
 
 [build-system]
