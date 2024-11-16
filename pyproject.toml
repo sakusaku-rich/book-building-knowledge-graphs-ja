@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "book-building-knowledge-graphs-ja"
+version = "0.1.0"
+description = ""
+authors = ["sakusaku-rich"]
+readme = "README.md"
+packages = [{include = "book_building_knowledge_graphs_ja"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "^6.29.5"
+neo4j = "^5.26.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+polars = "^1.13.1"
+tqdm = "^4.67.0"
+scikit-learn = "^1.5.2"
+plotly = "^5.24.1"
+nbformat = "^5.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
