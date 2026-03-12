@@ -10,7 +10,7 @@ packages = [{include = "book_building_knowledge_graphs_ja"}]
 python = "^3.12"
 ipykernel = "^6.29.5"
 neo4j = "^5.26.0"
-black = "^24.10.0"
+black = "^26.3.1"
 isort = "^5.13.2"
 polars = "^1.13.1"
 tqdm = "^4.67.0"
